@@ -1,0 +1,20 @@
+def gnomesort():
+    liste=[]
+    a=int(input("liste uzunluğu girin:"))
+    for i in range(0,a):
+        l=int(input("listeye eleman girin:"))
+        liste.append(l)
+    #kullanıcadan alınacak bilgilerle liste oluşturdum
+    # şimdi sıralıyorum
+    print(liste)
+    k=0
+    while (k< a):
+        if ((k==0) or liste[k]>=liste[k-1]):
+            k+=1
+        else:
+            liste[k],liste[k-1]=liste[k-1],liste[k]
+            k-=1
+
+    print(liste)
+    
+        
