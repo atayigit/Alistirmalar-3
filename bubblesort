@@ -1,0 +1,18 @@
+def bubblesort():
+    liste=[]
+    a=int(input("liste uzunluğu girin:"))
+    for i in range(0,a):
+        l=int(input("listeye eleman girin:"))
+        liste.append(l)
+    #kullanıcadan alınacak bilgilerle liste oluşturdum
+    # şimdi sıralıyorum
+    print(liste)
+    k=0
+    for i in range (0,a):
+        for j in range(0,a-i-1):
+            if liste[j]>liste[j+1]:
+                liste[j],liste[j+1]=liste[j+1],liste[j]
+    print(liste)
+print(bubblesort())    
+            
+    
