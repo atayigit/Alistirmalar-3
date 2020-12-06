@@ -1,0 +1,22 @@
+def selectionsort():
+    liste=[]
+    a=int(input("liste uzunluğu girin:"))
+    for i in range(0,a):
+        l=int(input("listeye eleman girin:"))
+        liste.append(l)
+    #kullanıcadan alınacak bilgilerle liste oluşturdum
+    # şimdi sıralıyorum
+    print(liste)
+    k=0
+    while k<(a-1):
+        for i in range(0,k):
+            if liste[k]>liste[i]:
+                temp = liste[k+1]#temp kullanarak elemanların yerini değiştirdim
+                liste[k+1]=liste[k]
+                liste[k]=temp
+                k+=1
+                            
+    print(liste)
+
+
+print(selectionsort())
